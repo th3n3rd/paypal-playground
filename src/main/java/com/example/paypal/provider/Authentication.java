@@ -43,7 +43,7 @@ class Authentication implements Interceptor {
             .authenticate(Credentials.basic(clientId, secret), "client_credentials")
             .execute()
             .body()
-            .getAccessToken();
+            .accessToken;
 
         return "Bearer %s".formatted(accessToken);
     }

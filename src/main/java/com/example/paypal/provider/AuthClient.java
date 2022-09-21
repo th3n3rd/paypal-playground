@@ -8,7 +8,8 @@ import retrofit2.http.Header;
 import retrofit2.http.POST;
 
 @RetrofitClient(name = "paypal-auth", url = "https://api-m.sandbox.paypal.com")
-public interface AuthClient {
+interface AuthClient {
+
     @POST("v1/oauth2/token")
     @FormUrlEncoded
     Call<AuthToken> authenticate(@Header("Authorization") String authorisation, @Field("grant_type") String grantType);
