@@ -7,7 +7,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
 
-@RetrofitClient(name = "paypal-auth", url = "https://api-m.sandbox.paypal.com")
+@RetrofitClient(name = "paypal-auth", url = "${paypal.client.url}")
 interface AuthClient {
 
     @POST("v1/oauth2/token")

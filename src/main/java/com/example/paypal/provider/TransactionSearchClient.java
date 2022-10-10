@@ -7,7 +7,7 @@ import retrofit2.http.Query;
 
 @RetrofitClient(
     name = "paypal-transaction-search",
-    url = "https://api-m.sandbox.paypal.com",
+    url = "${paypal.client.url}",
     configuration = AuthenticatedClientsConfig.class
 )
 public interface TransactionSearchClient {

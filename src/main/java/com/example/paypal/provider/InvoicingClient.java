@@ -6,7 +6,7 @@ import retrofit2.http.GET;
 
 @RetrofitClient(
     name = "paypal-invoicing",
-    url = "https://api-m.sandbox.paypal.com",
+    url = "${paypal.client.url}",
     configuration = AuthenticatedClientsConfig.class
 )
 public interface InvoicingClient {
