@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## sandbox properties
+application-credentials.properties
+application-credentials.yaml
+application-credentials.yml
